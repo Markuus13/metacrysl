@@ -52,4 +52,18 @@ class CryptSLParsingTest {
 			)
 		)
 	}
+	
+	@Test
+	def void parseAddConstraint() {
+		Assertions.assertNotNull(
+			parseHelper.parse(
+				'''
+				SPEC KeyGenerator REFINES javax.crypto.KeyGenerator {
+					add constraint alg in {"AES"} => keySize in {128, 192, 256};
+				}
+				'''
+			)
+		)
+	}
+
 }
