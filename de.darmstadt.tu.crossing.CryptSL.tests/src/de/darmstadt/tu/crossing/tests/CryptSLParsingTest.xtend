@@ -39,5 +39,17 @@ class CryptSLParsingTest {
 			)
 		)
 	}
-
+	
+	@Test
+	def void parseDefineRuleForRefinement() {
+		Assertions.assertNotNull(
+			parseHelper.parse(
+				'''
+				SPEC MessageDigest REFINES java.security.MessageDigest {
+					define algorithm = {"SHA-256", "SHA-384", "SHA-512"};
+				}
+				'''
+			)
+		)
+	}
 }

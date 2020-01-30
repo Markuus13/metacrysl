@@ -1556,8 +1556,8 @@ public class InternalCryptSLLexer extends Lexer {
         try {
             int _type = RULE_META_VARIABLE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCryptSL.g:15137:20: ( '$' RULE_ID )
-            // InternalCryptSL.g:15137:22: '$' RULE_ID
+            // InternalCryptSL.g:15164:20: ( '$' RULE_ID )
+            // InternalCryptSL.g:15164:22: '$' RULE_ID
             {
             match('$'); 
             mRULE_ID(); 
@@ -1577,11 +1577,11 @@ public class InternalCryptSLLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCryptSL.g:15139:10: ( '0' .. '9' ( '0' .. '9' | '_' )* )
-            // InternalCryptSL.g:15139:12: '0' .. '9' ( '0' .. '9' | '_' )*
+            // InternalCryptSL.g:15166:10: ( '0' .. '9' ( '0' .. '9' | '_' )* )
+            // InternalCryptSL.g:15166:12: '0' .. '9' ( '0' .. '9' | '_' )*
             {
             matchRange('0','9'); 
-            // InternalCryptSL.g:15139:21: ( '0' .. '9' | '_' )*
+            // InternalCryptSL.g:15166:21: ( '0' .. '9' | '_' )*
             loop1:
             do {
                 int alt1=2;
@@ -1630,10 +1630,10 @@ public class InternalCryptSLLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCryptSL.g:15141:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
-            // InternalCryptSL.g:15141:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // InternalCryptSL.g:15168:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
+            // InternalCryptSL.g:15168:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             {
-            // InternalCryptSL.g:15141:11: ( '^' )?
+            // InternalCryptSL.g:15168:11: ( '^' )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -1642,7 +1642,7 @@ public class InternalCryptSLLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // InternalCryptSL.g:15141:11: '^'
+                    // InternalCryptSL.g:15168:11: '^'
                     {
                     match('^'); 
 
@@ -1660,7 +1660,7 @@ public class InternalCryptSLLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // InternalCryptSL.g:15141:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // InternalCryptSL.g:15168:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             loop3:
             do {
                 int alt3=2;
@@ -1709,10 +1709,10 @@ public class InternalCryptSLLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCryptSL.g:15143:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? ) )
-            // InternalCryptSL.g:15143:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
+            // InternalCryptSL.g:15170:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? ) )
+            // InternalCryptSL.g:15170:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
             {
-            // InternalCryptSL.g:15143:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
+            // InternalCryptSL.g:15170:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )? | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )? )
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -1730,10 +1730,10 @@ public class InternalCryptSLLexer extends Lexer {
             }
             switch (alt8) {
                 case 1 :
-                    // InternalCryptSL.g:15143:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )?
+                    // InternalCryptSL.g:15170:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* ( '\"' )?
                     {
                     match('\"'); 
-                    // InternalCryptSL.g:15143:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // InternalCryptSL.g:15170:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -1749,7 +1749,7 @@ public class InternalCryptSLLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // InternalCryptSL.g:15143:21: '\\\\' .
+                    	    // InternalCryptSL.g:15170:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -1757,7 +1757,7 @@ public class InternalCryptSLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalCryptSL.g:15143:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // InternalCryptSL.g:15170:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1777,7 +1777,7 @@ public class InternalCryptSLLexer extends Lexer {
                         }
                     } while (true);
 
-                    // InternalCryptSL.g:15143:44: ( '\"' )?
+                    // InternalCryptSL.g:15170:44: ( '\"' )?
                     int alt5=2;
                     int LA5_0 = input.LA(1);
 
@@ -1786,7 +1786,7 @@ public class InternalCryptSLLexer extends Lexer {
                     }
                     switch (alt5) {
                         case 1 :
-                            // InternalCryptSL.g:15143:44: '\"'
+                            // InternalCryptSL.g:15170:44: '\"'
                             {
                             match('\"'); 
 
@@ -1799,10 +1799,10 @@ public class InternalCryptSLLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalCryptSL.g:15143:49: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )?
+                    // InternalCryptSL.g:15170:49: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* ( '\\'' )?
                     {
                     match('\''); 
-                    // InternalCryptSL.g:15143:54: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // InternalCryptSL.g:15170:54: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop6:
                     do {
                         int alt6=3;
@@ -1818,7 +1818,7 @@ public class InternalCryptSLLexer extends Lexer {
 
                         switch (alt6) {
                     	case 1 :
-                    	    // InternalCryptSL.g:15143:55: '\\\\' .
+                    	    // InternalCryptSL.g:15170:55: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -1826,7 +1826,7 @@ public class InternalCryptSLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalCryptSL.g:15143:62: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // InternalCryptSL.g:15170:62: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1846,7 +1846,7 @@ public class InternalCryptSLLexer extends Lexer {
                         }
                     } while (true);
 
-                    // InternalCryptSL.g:15143:79: ( '\\'' )?
+                    // InternalCryptSL.g:15170:79: ( '\\'' )?
                     int alt7=2;
                     int LA7_0 = input.LA(1);
 
@@ -1855,7 +1855,7 @@ public class InternalCryptSLLexer extends Lexer {
                     }
                     switch (alt7) {
                         case 1 :
-                            // InternalCryptSL.g:15143:79: '\\''
+                            // InternalCryptSL.g:15170:79: '\\''
                             {
                             match('\''); 
 
@@ -1886,12 +1886,12 @@ public class InternalCryptSLLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCryptSL.g:15145:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // InternalCryptSL.g:15145:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // InternalCryptSL.g:15172:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // InternalCryptSL.g:15172:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // InternalCryptSL.g:15145:24: ( options {greedy=false; } : . )*
+            // InternalCryptSL.g:15172:24: ( options {greedy=false; } : . )*
             loop9:
             do {
                 int alt9=2;
@@ -1916,7 +1916,7 @@ public class InternalCryptSLLexer extends Lexer {
 
                 switch (alt9) {
             	case 1 :
-            	    // InternalCryptSL.g:15145:52: .
+            	    // InternalCryptSL.g:15172:52: .
             	    {
             	    matchAny(); 
 
@@ -1946,12 +1946,12 @@ public class InternalCryptSLLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCryptSL.g:15147:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // InternalCryptSL.g:15147:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // InternalCryptSL.g:15174:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // InternalCryptSL.g:15174:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // InternalCryptSL.g:15147:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // InternalCryptSL.g:15174:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop10:
             do {
                 int alt10=2;
@@ -1964,7 +1964,7 @@ public class InternalCryptSLLexer extends Lexer {
 
                 switch (alt10) {
             	case 1 :
-            	    // InternalCryptSL.g:15147:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // InternalCryptSL.g:15174:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1984,7 +1984,7 @@ public class InternalCryptSLLexer extends Lexer {
                 }
             } while (true);
 
-            // InternalCryptSL.g:15147:40: ( ( '\\r' )? '\\n' )?
+            // InternalCryptSL.g:15174:40: ( ( '\\r' )? '\\n' )?
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -1993,9 +1993,9 @@ public class InternalCryptSLLexer extends Lexer {
             }
             switch (alt12) {
                 case 1 :
-                    // InternalCryptSL.g:15147:41: ( '\\r' )? '\\n'
+                    // InternalCryptSL.g:15174:41: ( '\\r' )? '\\n'
                     {
-                    // InternalCryptSL.g:15147:41: ( '\\r' )?
+                    // InternalCryptSL.g:15174:41: ( '\\r' )?
                     int alt11=2;
                     int LA11_0 = input.LA(1);
 
@@ -2004,7 +2004,7 @@ public class InternalCryptSLLexer extends Lexer {
                     }
                     switch (alt11) {
                         case 1 :
-                            // InternalCryptSL.g:15147:41: '\\r'
+                            // InternalCryptSL.g:15174:41: '\\r'
                             {
                             match('\r'); 
 
@@ -2036,10 +2036,10 @@ public class InternalCryptSLLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCryptSL.g:15149:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // InternalCryptSL.g:15149:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalCryptSL.g:15176:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // InternalCryptSL.g:15176:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // InternalCryptSL.g:15149:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalCryptSL.g:15176:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt13=0;
             loop13:
             do {
@@ -2093,8 +2093,8 @@ public class InternalCryptSLLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCryptSL.g:15151:16: ( . )
-            // InternalCryptSL.g:15151:18: .
+            // InternalCryptSL.g:15178:16: ( . )
+            // InternalCryptSL.g:15178:18: .
             {
             matchAny(); 
 

@@ -3547,6 +3547,7 @@ rule__AddConstraint__Group__2
 	}
 :
 	rule__AddConstraint__Group__2__Impl
+	rule__AddConstraint__Group__3
 ;
 finally {
 	restoreStackSize(stackSize);
@@ -3561,6 +3562,32 @@ rule__AddConstraint__Group__2__Impl
 	{ before(grammarAccess.getAddConstraintAccess().getConstraintAssignment_2()); }
 	(rule__AddConstraint__ConstraintAssignment_2)
 	{ after(grammarAccess.getAddConstraintAccess().getConstraintAssignment_2()); }
+)
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__AddConstraint__Group__3
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+	rule__AddConstraint__Group__3__Impl
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__AddConstraint__Group__3__Impl
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+(
+	{ before(grammarAccess.getAddConstraintAccess().getSemicolonKeyword_3()); }
+	';'
+	{ after(grammarAccess.getAddConstraintAccess().getSemicolonKeyword_3()); }
 )
 ;
 finally {

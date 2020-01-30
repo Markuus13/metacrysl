@@ -207,12 +207,13 @@ public class CryptSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cConstraintKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final Assignment cConstraintAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cConstraintConstraintParserRuleCall_2_0 = (RuleCall)cConstraintAssignment_2.eContents().get(0);
+		private final Keyword cSemicolonKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		
 		//AddConstraint:
-		//	'add' 'constraint' constraint=Constraint;
+		//	'add' 'constraint' constraint=Constraint ';';
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'add' 'constraint' constraint=Constraint
+		//'add' 'constraint' constraint=Constraint ';'
 		public Group getGroup() { return cGroup; }
 		
 		//'add'
@@ -226,6 +227,9 @@ public class CryptSLGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//Constraint
 		public RuleCall getConstraintConstraintParserRuleCall_2_0() { return cConstraintConstraintParserRuleCall_2_0; }
+		
+		//';'
+		public Keyword getSemicolonKeyword_3() { return cSemicolonKeyword_3; }
 	}
 	public class MetaCryslElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "de.darmstadt.tu.crossing.CryptSL.MetaCrysl");
@@ -3150,7 +3154,7 @@ public class CryptSLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//AddConstraint:
-	//	'add' 'constraint' constraint=Constraint;
+	//	'add' 'constraint' constraint=Constraint ';';
 	public AddConstraintElements getAddConstraintAccess() {
 		return pAddConstraint;
 	}
